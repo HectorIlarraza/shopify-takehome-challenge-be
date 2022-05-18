@@ -6,7 +6,7 @@ CREATE DATABASE inventory_dev;
 CREATE TABLE inventory (
     product_id SERIAL PRIMARY KEY,
     store_id SERIAL PRIMARY KEY,
-    stock_available BOOLEAN DEFAULT true
+    stock_available BOOLEAN
 );
 
 CREATE TABLE product (
