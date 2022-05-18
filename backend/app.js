@@ -10,7 +10,7 @@ app.use(express.json());
 
 app.use("/product", productController);
 
-app.get("/", (req, res) = res.status(200).send("Take Home Shopify Challenge"));
+app.get("/", (req, res) => res.status(200).send("Take Home Shopify Challenge"));
 app.get("*", (req, res) => res.status(404).send("Page not found"));
 
 module.exports = app;
